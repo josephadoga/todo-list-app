@@ -1,0 +1,172 @@
+@import url(https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css);
+
+:root {
+  --background-color-primary: rgb(245, 245, 246);
+  --background-color-dark: rgb(24, 23, 32);
+}
+
+body {
+  font-family: 'Nunito Sans', 'Poppins',  Arial, sans-serif;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.center {
+  min-width: 100%;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+h1{
+  font-size: 42px;
+  font-weight: 750;
+  text-align: center;
+}
+
+.form-section {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+form {
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+input[type=text] {
+  width: 99%;
+  height: 44px;
+  padding: 0 15px;
+  border: 1px solid rgb(255 255 255 / 0.05);
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+
+input[type=submit] {
+  position: absolute;
+  right: 0;
+  transform: translateX(-10%);
+  top: 10%;
+  width: 90px;
+  height: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #A92FFF;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+
+input[type=submit]:hover {
+  background-color: #9908ff;
+}
+
+.list {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  height: auto;
+  display: grid;
+  margin-top: 40px;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.task {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+  height: 80px;
+}
+
+.line {
+  height: 100%;
+  width: 5px;
+  border-radius: 50px;
+}
+
+.undone {
+  background-color: #A92FFF;
+}
+
+.done {
+  background-color: #00CC9A;
+}
+
+.task-content {
+  width: 360px;
+}
+
+.details {
+  width: 100%;
+}
+
+p.task-text {
+  font-size: 25px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icons {
+  gap: 10px;
+}
+
+.details p {
+  color: #7F8084;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #7F8084;
+  transition: all 0.25s ease-in-out;
+}
+
+.check-circle-icon:hover {
+  color: #00CC9A;
+}
+
+.edit-icon:hover {
+  color: #A92FFF;
+}
+
+.bin-icon:hover {
+  color: #ff0000;
+}
